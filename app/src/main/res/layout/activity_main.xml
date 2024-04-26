@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lytDeliciaBeverage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:logo="@drawable/assignment1logo"
+        app:title="Delicia Beverage"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtCustName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/custNameHint"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/custName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtCustEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/custEmail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/custEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtCustPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/custPhoneNo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/custPhoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/typeofbeverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beverageType"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+            <RadioGroup
+                android:id="@+id/rgBeverageChoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbTea"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/teaTitle"
+                    android:textSize="17sp"
+                    android:textStyle="italic" />
+                <RadioButton
+                    android:id="@+id/rbCoffee"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="50sp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/coffeeTitle"
+                    android:textSize="17sp"
+                    android:textStyle="italic"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/additionalsTitle"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="5sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbMilk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/milkTitle"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/cbSugar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/sugarTitle"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sizeOfBeveragesTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/beverageSizeTitle"
+                android:layout_marginTop="10dp"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+
+            <Spinner
+                android:id="@+id/spnBeverageSize"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/spn_text_border"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/addedBeverageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/flavoursTitle"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+            <RadioGroup
+                android:id="@+id/addingFlavourGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/addedTeaFlavourOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/honeyTeaFlavour"
+                    android:textSize="17sp"
+                    android:textStyle="italic" />
+                <RadioButton
+                    android:id="@+id/addedTeaFlavourTwo"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="50sp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/gingerTeaFlavour"
+                    android:textSize="17sp"
+                    android:textStyle="italic"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/selectTheRegionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/regionsHint"
+                android:layout_marginTop="5dp"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtLayoutRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/regionsHint"
+                android:orientation="horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="12dp">
+                <AutoCompleteTextView
+                    android:id="@+id/acRegion"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:textIsSelectable="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/selectTheStoreTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/storeTitle"
+                android:layout_marginTop="5dp"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spnRegions"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/spn_text_border"
+                android:textSize="15sp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtLayoutDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/dateHint"
+                android:orientation="horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="12dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/datePickerEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:textIsSelectable="true"
+                    android:onClick="showDatePicker" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnPrint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Print Bill" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

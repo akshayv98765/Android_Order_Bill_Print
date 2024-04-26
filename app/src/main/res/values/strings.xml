@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">AkshayAssignment1</string>
+    <string name="logo_description">ApplicationLogo</string>
+    <string name="app_title">Delicia Beverage</string>
+    <string name="custNameHint">Customer Name:</string>
+    <string name="custEmail">Email Id</string>
+    <string name="custPhoneNo">Customer Cell no.</string>
+    <string name="beverageType">Types of Beverages:</string>
+    <string name="teaTitle">Tea</string>
+    <string name="coffeeTitle">Coffee</string>
+    <string name="milkTitle" >Milk</string>
+    <string name="sugarTitle">Sugar</string>
+    <string name="beverageSizeTitle">Size of Beverage:</string>
+    <string name="additionalsTitle">Additionals </string>
+    <string name = "small">Small</string>
+    <string name = "medium">Medium</string>
+    <string name = "large">Large</string>
+
+
+<string name="flavoursTitle">Added Flavouring:</string>
+<string name="noTeaFlavour">None</string>
+<string name="gingerTeaFlavour">Ginger</string>
+<string name="honeyTeaFlavour">Honey</string>
+<string name="noCofeeFlavour">None</string>
+<string name="pumpkinCofeeFlavour">Pumpkin Spice</string>
+<string name="caramelCoffeeFlavour">Caramel</string>
+<string name = "waterloo">Waterloo</string>
+<string name = "milton">Milton</string>
+<string name = "london">London</string>
+<string name = "missisuaga">Missisuaga</string>
+<string name="regionsHint">Select the Region:</string>
+<string name="storeTitle">Select the Store:</string>
+<string name="dateHint">Sales Date:</string>
+<string name="waterlooAddress1">65 University Ave E</string>
+<string name="waterlooAddress2">415 King St</string>
+<string name="waterlooAddress3">585 Weber St</string>
+<string name="londonAddress1">616 Wharncliffe Rd</string>
+<string name="londonAddress2">1885 Huron St</string>
+<string name="londonAddress3">670 Wonderland Road</string>
+<string name="miltonAddress1">900 Steeles Ave</string>
+<string name="miltonAddress2">80 Market Dr</string>
+<string name="miltonAddress3">820 Main St</string>
+<string name="missiuagaAddress1">144 Dundas St</string>
+<string name="missiuagaAddress2">3411 Mavis Rd</string>
+<string name="missiuagaAddress3">30 Eglinton Ave</string>
+<string name="missiuagaAddress4">6075 Creditview Rd</string>
+
+<string name="printBtnTitle">Print Bill</string>
+
+<string-array name="spnBeverageSize">
+    <item name = "small">Small</item>
+    <item name = "medium">Medium</item>
+    <item name = "large">Large</item>
+</string-array>
+
+
+<string-array name="spnRegions">
+    <item name = "waterloo">Waterloo</item>
+    <item name = "milton">Milton</item>
+    <item name = "london">London</item>
+    <item name = "missisuaga">Missisuaga</item>
+</string-array>
+
+
+<string-array name="waterlooStores">
+    <item>65 University Ave E</item>
+    <item>415 King St</item>
+    <item>585 Weber St</item>
+</string-array>
+<string-array name="londonStores">
+    <item>616 Wharncliffe Rd</item>
+    <item>1885 Huron St</item>
+    <item>670 Wonderland Road</item>
+</string-array>
+<string-array name="miltonStores">
+    <item>900 Steeles Ave</item>
+    <item>80 Market Dr</item>
+    <item>820 Main St</item>
+</string-array>
+<string-array name="missisuagaStores">
+    <item>144 Dundas St</item>
+    <item>3411 Mavis Rd</item>
+    <item>30 Eglinton Ave</item>
+    <item>6075 Creditview Rd</item>
+</string-array>
+
+
+
+</resources>
